@@ -1,119 +1,72 @@
-🥊 UFC Fighter Performance Analysis
+# 🥊 UFC Fighter Performance Analysis
 
-Author: Eriyon Adams
+**Author: Eriyon Adams**
 
-📊 Project Overview
+## 📊 Project Overview
 
-This project analyzes UFC fight data to explore how fighter activity and damage taken may influence performance outcomes.
+As a longtime MMA/UFC fan, I wanted to combine my interest in the sport with data analytics.
 
-Using Python and Power BI, the analysis focuses on two main factors:
+This project analyzes **UFC fighter performance** to explore how **time between fights** and **damage taken** relate to fight outcomes. I used **Python** to clean and transform the data and **Power BI** to visualize the results.
 
-⏱ Time between fights (Rest Period)
+### ❓ Questions I Wanted to Answer
 
-💥 Damage taken (Significant Strikes Absorbed)
+* Does time between fights relate to a fighter's chance of winning?
+* How does damage taken relate to fighter performance?
+* How does damage absorbed differ across fight outcomes such as **Decision, KO/TKO, and Submission**?
 
-The goal of this project is to demonstrate practical data analysis, data cleaning, and visualization skills using real-world sports data.
+---
 
-❓ Key Questions
+## 🛠️ Data Analysis Process
 
-This analysis explores several important questions:
+Using **Python and Pandas**, I:
 
-🥊 Does the amount of time between fights affect a fighter’s chance of winning?
+* 🧹 Cleaned and transformed UFC fight data
+* ⏱️ Calculated the number of days between fights
+* 📦 Grouped fighters into activity/rest-period categories
+* 💥 Used **significant strikes absorbed** as a proxy for damage taken
+* 📊 Calculated win rates and average damage
+* 📈 Built visualizations to identify performance patterns
 
-📉 Do fighters who absorb more damage tend to lose more often?
+> **Note:** Time between fights is used as a proxy for fighter activity/recovery and does not represent complete physical rest.
 
-📈 How do different fight outcomes (KO/TKO, submission, decision) relate to damage taken?
+---
 
-🗂 Dataset
+## 📊 Power BI Dashboard
 
-The dataset used in this project comes from UFC fight statistics available on Kaggle.
+I created an interactive **Power BI dashboard** to visualize the relationships between fighter activity, damage, and performance.
 
-Each row represents a single UFC fight and includes:
+**Dashboard Preview**
 
-👤 Fighter names
+<img width="1255" height="663" alt="image" src="https://github.com/user-attachments/assets/dcaf93e9-0c35-4753-8e65-795f8912bde7" />
 
-📅 Fight date
 
-🏆 Fight result (Win/Loss)
+---
 
-⚔️ Fight outcome method (KO/TKO, Submission, Decision, etc.)
+## 🔍 Key Findings
 
-👊 Significant strikes landed
+* ⚡ Fighters who returned within **90 days** had the highest win rate in the dataset.
+* ⏳ Fighters with longer periods between fights generally showed lower win rates.
+* 💥 **Decision fights** showed higher average significant strikes absorbed, indicating greater accumulated striking damage.
+* 📉 Damage absorbed alone had only a **weak relationship with winning**, suggesting fighter performance is influenced by multiple factors.
 
-💥 Significant strikes absorbed
+---
 
-🛠 Data Processing
+## 🧰 Tools Used
 
-The dataset was cleaned and transformed using Python (Pandas).
+**Python** • **Pandas** • **NumPy** • **Google Colab** • **Power BI** • **GitHub**
 
-Key steps included:
+---
 
-🔄 Converting fight dates to datetime format
+## 🚀 Future Improvements
 
-⏱ Calculating days between fights
+Future analysis could incorporate:
 
-📦 Creating rest period buckets
+* ⚖️ Weight classes
+* 🎂 Fighter age
+* 🏆 Fighter rankings
+* 🤕 Injury history
+* 📈 Predictive modeling for fight outcomes
 
-💥 Calculating significant strikes absorbed as a measure of damage
+---
 
-📊 Aggregating statistics to analyze performance trends
-
-📈 Visualizations
-
-Interactive dashboards were created using Power BI to highlight key patterns in the data.
-
-Key visuals include:
-
-📊 Win Rate by Rest Period
-
-💥 Average Significant Strikes Absorbed by Rest Period
-
-🥊 Fight Outcome by Method
-
-These visualizations help illustrate how fighter activity and damage relate to performance outcomes.
-
-🔍 Key Insight
-
-Initial analysis suggests that:
-
-⚡ Fighters who compete more frequently may have slightly higher win rates
-
-💥 Higher levels of damage absorbed are associated with lower performance outcomes
-
-⏳ Decision fights typically involve more accumulated damage
-
-🧰 Tools Used
-
-🐍 Python
-
-📦 Pandas
-
-💻 Google Colab
-
-📊 Power BI
-
-🗃 GitHub
-
-🎯 Purpose of the Project
-
-This project demonstrates skills commonly used in Data Analyst and Business Intelligence roles, including:
-
-🧹 Data cleaning and transformation
-
-🔎 Exploratory data analysis
-
-📊 Data visualization
-
-🗣 Communicating insights from data
-
-🚀 Future Improvements
-
-Potential future work includes:
-
-📚 Expanding the dataset with additional fights
-
-⚖️ Analyzing performance by weight class
-
-📈 Building predictive models for fight outcomes
-
-🧠 Incorporating additional fighter statistics (age, reach, experience)
+**This project demonstrates my ability to transform raw data, engineer analytical features, identify meaningful patterns, and communicate findings through data visualization.**
